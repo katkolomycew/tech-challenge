@@ -13,8 +13,8 @@ h1 {
 
 p {
   text-align: center;
-  margin: 0 auto;
   max-width: 300px;
+  margin: 0 auto;
 }
 
 .squares {
@@ -33,12 +33,12 @@ p {
 }
 
 #clickCells {
-  background-color: pink;
   border: 1px solid #000000;
+  background-color: pink;
   border-radius: 10px;
+  text-align: center;
   cursor: pointer;
   outline: none;
-  text-align: center;
   position: absolute;
   height: 50px;
   width: 300px;
@@ -49,11 +49,11 @@ p {
 }
 
 #flagsLeft {
-  background-color: #cccccc;
   border: 1px solid #000000;
+  background-color: #cccccc;
   border-radius: 10px;
-  outline: none;
   text-align: center;
+  outline: none;
   position: absolute;
   height: 50px;
   width: 300px;
