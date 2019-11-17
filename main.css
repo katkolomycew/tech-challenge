@@ -2,12 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: bisque;
   font-family: "Courier New", Courier, monospace;
 }
 
 h1 {
   text-align: center;
-  margin: 25px;
+  margin: 10px;
+}
+
+p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 300px;
 }
 
 .squares {
@@ -26,8 +33,8 @@ h1 {
 }
 
 #clickCells {
-  background-color: #cccccc;
-  border: 1px solid black;
+  background-color: pink;
+  border: 1px solid #000000;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
@@ -38,12 +45,12 @@ h1 {
 }
 
 #clickCells:hover {
-  background-color: #aaaaaa;
+  background-color: palevioletred;
 }
 
 #flagsLeft {
   background-color: #cccccc;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 10px;
   outline: none;
   text-align: center;

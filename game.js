@@ -1,23 +1,23 @@
 // sets variables for the board
 let squares = [];
-let numberOfMines = 40;
+let numberOfMines = 30;
 let numberOfFlags = 0;
 let playerClickStage = "Clicking // Press to flag";
 
 // position and styles the board on the page
 let board = document.getElementById("board");
 board.style.left = window.innerWidth / 2 - 150 + "px";
-board.style.top = window.innerHeight / 2 - 220 + "px";
+board.style.top = window.innerHeight / 2 - 150 + "px";
 
 // position and styles the clicking buttons on the page
 let clickCells = document.getElementById("clickCells");
 clickCells.style.left = window.innerWidth / 2 - 150 + "px";
-clickCells.style.top = window.innerHeight / 2 + 120 + "px";
+clickCells.style.top = window.innerHeight / 2 + 170 + "px";
 
 // position and styles the flagging buttons on the page
 let flagsLeft = document.getElementById("flagsLeft");
 flagsLeft.style.left = window.innerWidth / 2 - 150 + "px";
-flagsLeft.style.top = window.innerHeight / 2 + 200 + "px";
+flagsLeft.style.top = window.innerHeight / 2 + 230 + "px";
 
 // makes the board
 const makeSquares = () => {
@@ -83,14 +83,14 @@ const makeSquares = () => {
 };
 
 // makes and renders the squares within the board
-const makeIndividualSquare = (left, top, idY, idX) => {
+const makeIndividualSquare = (left, top, idColumn, idRow) => {
   let newSquare = document.createElement("div");
   newSquare.style.left = left + "px";
   newSquare.style.top = top + "px";
   newSquare.setAttribute("class", "squares");
   newSquare.setAttribute(
     "onclick",
-    "buttonWasClicked([" + idY + "," + idX + "])"
+    "buttonWasClicked([" + idColumn + "," + idRow + "])"
   );
   document.getElementById("board").appendChild(newSquare);
   return newSquare;
@@ -158,7 +158,7 @@ const buttonWasClicked = yAndX => {
       numberOfFlags < 40
     ) {
       squares[column][row].clickStage = "flagged";
-      squares[column][row].draw.style.backgroundColor = "#FF0000";
+      squares[column][row].draw.style.backgroundColor = "#D87093";
     }
 
     numberOfFlags = 0;
