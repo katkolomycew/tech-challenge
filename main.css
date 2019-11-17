@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px;
+}
+
+.squares {
+  background-color: #cccccc;
+  border: 1px solid #000000;
+  color: #cccccc;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+#board {
+  position: absolute;
+}
+
+#clickCells {
+  background-color: #cccccc;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  position: absolute;
+  height: 50px;
+  width: 300px;
+}
+
+#clickCells:hover {
+  background-color: #aaaaaa;
+}
+
+#flagsLeft {
+  background-color: #cccccc;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+  position: absolute;
+  height: 50px;
+  width: 300px;
+}
